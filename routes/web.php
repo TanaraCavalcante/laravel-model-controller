@@ -13,10 +13,10 @@ use App\Http\Controllers\MoviesController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('pages.home');
-});
+//TODO comentar esse para colocar o route abaixo como inicial
+// Route::get('/', function () {
+//     return view('pages.home');
+// });
 
 // Crio um metodo para falar com o controller
-Route::get("/movies", [MoviesController::class, "index"]);
+Route::get("/", [MoviesController::class, "index"]);
